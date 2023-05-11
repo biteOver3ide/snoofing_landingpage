@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="../assets/js/color-modes.js"></script>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>@ViewData["Title"] - forsyning_gev</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+	<link rel="stylesheet" href="~/forsyning_gev.styles.css" asp-append-version="true"/>
+	<link rel="icon" type="image/x-icon" href="/favicon-32x32.png">
+	<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/">
+</head>
+<body>
+<header>
+	<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+		<div class="container">
+			<div class="container">
+				<img src="/GEV_Logo_2020_med_Payoff_CMYK.jpg" height="90" width="224"/>
+			</div>
+			<h3><ul class="navbar-nav flex-grow-1">
+						<li class="nav-item">
+							<h3><a class="nav-link text-dark" asp-area="" asp-page="/Index">Forside</a></h3>
+							<p> </p>
+
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="" asp-page="/Index"></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="" asp-page="Index">Job</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="" asp-page="/Index"></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="" asp-page="/Index">Driftsinformation</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="" asp-page="/Index">Privatlivspolitik</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="" asp-page="/Index">Skolebesøg</a>
+						</li>
+
+
+
+
+					</ul>
+				</h3>
+		</div>
+	</nav>
+</header>
+<div class="container">
+	<main role="main" class="pb-3">
+		@RenderBody()
+	</main>
+</div>
+
+<footer class="border-top footer text-muted">
+	<div class="container">
+		<footer class="py-5">
+			<div class="row">
+
+				<div class="col-6 col-md-2 mb-3">
+					<h5>Kontakt</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2">
+							<a href="#" class="nav-link p-0 text-body-secondary">
+								GEV
+								Tårnvej 24
+							</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a href="#" class="nav-link p-0 text-body-secondary">DK-7200 Grindsted</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a href="#" class="nav-link p-0 text-body-secondary">Telefon 75 32 11 66</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a href="#" class="nav-link p-0 text-body-secondary">mail@gev.dk</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a href="#" class="nav-link p-0 text-body-secondary">CVR 25509080</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-6 col-md-2 mb-3">
+					<h5>Åbningstider</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2">
+							<a href="#" class="nav-link p-0 text-body-secondary">Mandag - Torsdag</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a href="#" class="nav-link p-0 text-body-secondary">07.30 - 12.00</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a href="#" class="nav-link p-0 text-body-secondary">12.30 - 16.00</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a href="#" class="nav-link p-0 text-body-secondary">Fredag</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a href="#" class="nav-link p-0 text-body-secondary">07.30 - 12.30</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-6 col-md-2 mb-3">
+					<h5>Akutte henvendelser</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2">
+							<a href="#" class="nav-link p-0 text-body-secondary">El & Vand</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a href="#" class="nav-link p-0 text-body-secondary">Telefon 40 96 12 65</a>
+						</li>
+
+						<li class="nav-item mb-2">
+							<a href="#" class="nav-link p-0 text-body-secondary">Varme</a>
+						</li>
+						<li class="nav-item mb-2">
+							<a href="#" class="nav-link p-0 text-body-secondary">Telefon 40 96 12 66</a>
+						</li>
+
+					</ul>
+				</div>
+
+				<div class="col-md-5 offset-md-1 mb-3">
+					<form>
+
+						<div class="d-flex flex-column flex-sm-row w-100 gap-2">
+							<p></p>
+							<img src="/apple-touch-icon(1).png" height="75" width="125"/>
+							<p></p>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="container">
+				<p>&copy; 2023 GEV, Alle rettigheder forbeholdes.</p>
+			</div>
+
+		</footer>
+
+	</div>
+
+
+	<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</footer>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+@await RenderSectionAsync("Scripts", false)
+</body>
+</html>

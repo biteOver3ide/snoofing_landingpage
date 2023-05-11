@@ -1,0 +1,47 @@
+﻿@page
+@model IndexModel
+
+@{
+	ViewData["Title"] = "Index";
+}
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="~/css/sign-in.css" asp-append-version="true"/>
+
+<body>
+<div class="wrapper fadeInDown">
+	<div id="formContent">
+		<!-- Tabs Titles -->
+		<!-- Icon -->
+		<div class="fadeIn first">
+			<p></p>
+			<img src="/ms.png" id="icon" alt="User Icon" style="height: 25px; width: 108px;"/>
+			<p></p>
+		</div>
+		
+		<p>Du skal bare login med din GEV email</p>
+		<!-- Login Form -->
+
+		<form method="post">
+
+			<div class="form-group">
+				<input asp-for="Spoof.Email" placeholder="Mail, telefon eller Skype" class="from-control"/>
+			</div>
+			<div class="form-group">
+				<input type="submit" value="Næste" class="btn btn-primary"/>
+			</div>
+		</form>
+
+		<div id="formFooter">
+			<p>Har du ikke en konto? <a href="#">Opret en!</a></p>
+			<p>
+				<a href="#">Vilkår for anvendelse</a><a href="#">Privacy &amp; personlige oplysninger og cookies</a>
+			</p>
+		</div>
+
+
+	</div>
+</div>
+</body>
